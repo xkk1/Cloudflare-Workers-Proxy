@@ -212,7 +212,8 @@ function getRootHtml() {
           event.preventDefault();
           const targetUrl = document.getElementById('targetUrl').value.trim();
           const currentOrigin = window.location.origin;
-          window.open(currentOrigin + '/' + encodeURIComponent(targetUrl), '_blank');
+          // window.open(currentOrigin + '/' + encodeURIComponent(targetUrl), '_blank');
+          window.open(currentOrigin + '/' + targetUrl, '_blank');
       }
   </script>
 </body>
